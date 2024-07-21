@@ -1,3 +1,4 @@
+import "@twa-dev/sdk";
 import "./App.css";
 import { TonConnectButton } from "@tonconnect/ui-react";
 import { useTonConnect } from "./hooks/useTonConnect";
@@ -18,7 +19,7 @@ function App() {
         </div>
 
         <div className="Card">
-          <b>Counter Value</b>
+          <b>Total Number of Votes</b>
           <div>{value ?? "Loading..."}</div>
         </div>
 
@@ -27,7 +28,7 @@ function App() {
           onClick={() => {
             sendIncrement();
           }}>
-          Increment
+          Vote
         </a>
       </div>
     </div>
